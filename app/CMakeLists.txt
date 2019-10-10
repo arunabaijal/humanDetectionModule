@@ -1,10 +1,8 @@
 add_executable(shell-app main.cpp ImageOutput.cpp ImageInput.cpp HumanDetector.cpp)
 include_directories(
     ${CMAKE_SOURCE_DIR}/include
+    ${OpenCV_INCLUDE_DIRS}
 )
-cmake_minimum_required(VERSION 2.8)
-project( DisplayImage )
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR})
 find_package( OpenCV REQUIRED )
-include_directories( ${OpenCV_INCLUDE_DIRS} )
-add_executable( DisplayImage DisplayImage.cpp )
-target_link_libraries( DisplayImage ${OpenCV_LIBS} )
+target_link_libraries( shell-app ${OpenCV_LIBS} )
