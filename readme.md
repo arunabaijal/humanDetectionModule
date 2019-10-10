@@ -1,6 +1,6 @@
-# C++ Boilerplate
-[![Build Status](https://travis-ci.org/urastogi885/Human_Detection_Module.svg?branch=master)](https://travis-ci.org/urastogi885/Human_Detection_Module)
-[![Coverage Status](https://coveralls.io/repos/github/urastogi885/Human_Detection_Module/badge.svg?branch=master)](https://coveralls.io/github/urastogi885/Human_Detection_Module?branch=master)
+# Human Detection Module
+[![Build Status](https://travis-ci.org/urastogi885/humanDetectionModule.svg?branch=master)](https://travis-ci.org/urastogi885/humanDetectionModule)
+[![Coverage Status](https://coveralls.io/repos/github/urastogi885/humanDetectionModule/badge.svg?branch=master)](https://coveralls.io/github/urastogi885/humanDetectionModule?branch=master)
 ---
 
 ## Overview
