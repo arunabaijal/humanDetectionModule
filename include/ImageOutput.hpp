@@ -10,11 +10,13 @@
 #include <opencv2/objdetect.hpp>
 #include <opencv2/core/mat.hpp>
 #include <opencv2/core/types.hpp>
+#include <IReaderWriter.hpp>
 
 class ImageOutput {
  private:
   cv::Mat outputImage;
   std::vector<cv::Rect> boundary;
+  IReaderWriter writer;
 
  public:
   /*

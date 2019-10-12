@@ -10,10 +10,12 @@
 #include <opencv2/objdetect.hpp>
 #include <opencv2/core/mat.hpp>
 #include <opencv2/core/types.hpp>
+#include <IReaderWriter.hpp>
 
 class ImageInput {
  private:
   cv::Mat imageFrame;
+  IReaderWriter reader;
 
  public:
   /*
