@@ -7,13 +7,13 @@
 #ifndef INCLUDE_HUMANDETECTOR_HPP_
 #define INCLUDE_HUMANDETECTOR_HPP_
 
-#include <opencv2/objdetect.hpp>
+#include <IDescriptor.hpp>
 #include <opencv2/core/mat.hpp>
 #include <opencv2/core/types.hpp>
 
 class HumanDetector {
  private:
-  cv::HOGDescriptor detector;
+  IDescriptor descriptor;
   std::vector<cv::Rect> boundary;
   cv::Mat imageFrame;
 
