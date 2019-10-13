@@ -1,7 +1,7 @@
 /*@
  *@file IDescriptor.hpp
  *@author Aruna Baijal
- *@brief This class controls the implementation of descriptor to be injected
+ *@brief This interface controls the implementation of descriptor to be injected
  *@copyright 2019 Aruna Baijal
  */
 #ifndef INCLUDE_IDESCRIPTOR_HPP_
@@ -12,6 +12,11 @@
 
 class IDescriptor {
  public:
+  /*
+   * @brief Virtual function for interface
+   * @param cv::Mat image to detect humans in.
+   * @return std::vector<cv::Rect> with detected humans.
+   */
   virtual std::vector<cv::Rect> detect(cv::Mat image) = 0;
 };
 

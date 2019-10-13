@@ -14,8 +14,22 @@
 
 class IReaderWriter {
  public:
+  /*
+   * @brief Virtual function for interface
+   * @param std::String with image path
+   * @return cv::Mat image in Mat format
+   */
   virtual cv::Mat read(std::String imagePath) = 0;
+  /*
+   * @brief Virtual function for interface
+   * @param cv::Mat original image
+   * @param cv::Rect boundary of detected human in image.
+   */
   virtual void drawRectangle(cv::Mat image, cv::Rect boundary) = 0;
+  /*
+   * @brief Virtual function for interface
+   * @param cv::Mat image to display.
+   */
   virtual void showImage(cv::Mat) = 0;
 };
 
