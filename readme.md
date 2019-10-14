@@ -10,8 +10,22 @@ Human Detection module for ACME Robotics with:
 - cmake
 - googletest
 
+We are designing a new human detection module by incorporating high-quality software engineering practices for Acme
+Robotics to take our deliverable, finish development, and integrate it into their product.
+
+Detection and avoidance of human obstacles play a crucial role in any self-driving system. The design and development of
+real-time obstacle detection systems are currently one of the most demanding components in the autonomous industry.
+To address real-life problems involved in obstacle detection, a plethora of sensors such as LIDARs, Radars, and cameras,
+are being used in the industry. We are making use of the most readily available resource, images, to identify human 
+obstacles.
+
+Our module will be able to identify multiple humans in an image. The final deliverable of our module will be a set of 
+images with location information of the detected humans. The robot's system will be able to use this location 
+information. We are assuming the input and output of our module to be a set of static images.
+
 The module is still under development. After the final stage of development, the module will be capable of detecting
 multiple humans within a frame.
+
 
 ## Team Members
 
