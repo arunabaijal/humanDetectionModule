@@ -16,7 +16,7 @@ class ImageOutput {
  private:
   cv::Mat outputImage;
   std::vector<cv::Rect> boundary;
-  IReaderWriter writer;
+  IReaderWriter* writer;
 
  public:
   /*
