@@ -24,7 +24,7 @@ images with location information of the detected humans. The robot's system will
 information. We are assuming the input and output of our module to be a set of static images.
 
 The module is still under development. After the final stage of development, the module will be capable of detecting
-multiple humans within a frame.
+multiple humans within a frame. We will add results and performance examples by the end of phase 2.
 
 
 ## Team Members
@@ -51,27 +51,48 @@ to access our Sprint notes document.
 ## Install OpenCV
 
 - The module utilizes features of OpenCV.
-- If you do not have OpenCV installed on your machine, please install it by before cloning the repository.
-- Follow the instructions on the [*link*](https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html) for the same.
+- Although the repository contains OpenCV library under the vendor directory, please update you system with necessary dependencies.
+- Run the commands below to install OpenCV dependencies before cloning the repository:
+```shell script
+sudo apt-get install build-essential
+sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+```
  
-## Clone via command-line
+## Standard install via command-line
 
 - Switch to the directory where you want to clone this repository
 - Run the following command:
 ```shell script
 git clone --recursive https://travis-ci.org/urastogi885/humanDetectionModule
+mkdir build
+cd build/
+cmake ..
+make
 ```
 
 ## Accessing the UML Diagrams
+
 - Open the directory of the project
 - Access UML diagrams from the *initial* folder located within *UML* sub-directory
 
 ## Run
 
+Within the *build* sub-directory, run:
+```shell script
+./app/shell-app
+```
+This command will show nothing after execution as implementation has not been completed yet.
+
 ## Test
 
-## Debug
+Within the *build* sub-directory, run:
+```shell script
+./test/cpp-test
+```
+
+## Demo
 
 ## Phase-1 Issues
 
-- Linker is not able to find necessary OpenCV libraries
+- TDD not completed for all classes such as ImageOutput
