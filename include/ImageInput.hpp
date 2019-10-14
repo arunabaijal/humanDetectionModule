@@ -15,7 +15,7 @@
 class ImageInput {
  private:
   cv::Mat imageFrame;
-  IReaderWriter reader;
+  IReaderWriter* reader;
 
  public:
   /*

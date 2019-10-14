@@ -19,8 +19,9 @@ class ReaderWriter : public IReaderWriter {
   /*
    * @param cv::Mat original image
    * @param cv::Rect boundary of detected human in image.
+   * @return cv::Mat final image
    */
-  void drawRectangle(cv::Mat image, cv::Rect boundary);
+  cv::Mat drawRectangle(cv::Mat image, cv::Rect boundary);
   /*
    * @param cv::Mat image to display.
    */

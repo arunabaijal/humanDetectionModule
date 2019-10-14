@@ -24,8 +24,9 @@ class IReaderWriter {
    * @brief Virtual function for interface
    * @param cv::Mat original image
    * @param cv::Rect boundary of detected human in image.
+   * @return cv::Mat final image
    */
-  virtual void drawRectangle(cv::Mat image, cv::Rect boundary) = 0;
+  virtual cv::Mat drawRectangle(cv::Mat image, cv::Rect boundary) = 0;
   /*
    * @brief Virtual function for interface
    * @param cv::Mat image to display.
