@@ -40,18 +40,24 @@ to access our Sprint notes document.
 - If you do not have OpenCV installed on your machine, please install it by before cloning the repository.
 - Follow the instructions on the [*link*](https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html) for the same.
  
-## Standard clone via command-line
+## Clone via command-line
 
 - Switch to the directory where you want to clone this repository
 - Run the following command:
 ```shell script
 git clone --recursive https://travis-ci.org/urastogi885/humanDetectionModule
 ```
-## Debug
 
+## Accessing the UML Diagrams
 - Open the directory of the project
 - Access UML diagrams from the *initial* folder located within *UML* sub-directory
 
-## Issues
+## Run
+
+## Test
+
+## Debug
+
+## Phase-1 Issues
 
 - Linker is not able to find necessary OpenCV libraries
