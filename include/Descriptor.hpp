@@ -10,7 +10,7 @@
 #include <IDescriptor.hpp>
 #include <opencv2/objdetect.hpp>
 
-class Descriptor : public IDescriptor {
+class Descriptor : public virtual IDescriptor {
  private:
   cv::HOGDescriptor descriptor;
  public:

@@ -13,7 +13,7 @@
 
 class HumanDetector {
  private:
-  IDescriptor descriptor;
+  IDescriptor* descriptor;
   std::vector<cv::Rect> boundary;
   cv::Mat imageFrame;
 
@@ -44,6 +44,14 @@ class HumanDetector {
 
   void setImageFrame(cv::Mat imageFrame) {
     this->imageFrame = imageFrame;
+  }
+
+  IDescriptor* getDescriptor() const {
+    return descriptor;
+  }
+
+  void setDescriptor(IDescriptor* descriptor) {
+    this->descriptor = descriptor;
   }
 };
 
