@@ -5,13 +5,14 @@ add_executable(
     test.cpp
     HumanDetectorTest.cpp
     DescriptorMock.hpp
-    ${CMAKE_SOURCE_DIR}/app/Descriptor.cpp
+    ../app/Descriptor.cpp
+    ../app/HumanDetector.cpp
 )
 target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
                                            ${CMAKE_SOURCE_DIR}/include
                                            ${OpenCV_INCLUDE_DIRS}
-                                           ${CMAKE_CURRENT_SOURCE_DIR}
-                                           ../vendor/googletest/googlemock/include)
-target_link_libraries(cpp-test PUBLIC gtest ${OpenCV_LIBS} gmock)
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR})
-find_package( OpenCV REQUIRED)
+                                           ../vendor/googletest/googlemock/include
+                                           ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(cpp-test PUBLIC gtest gmock)
+find_package( OpenCV REQUIRED PATHS ../vendor/opencv/build)
+target_link_libraries(cpp-test PUBLIC ${OpenCV_LIBS})

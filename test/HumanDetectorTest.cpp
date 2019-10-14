@@ -48,6 +48,10 @@ TEST(humanDetector, should_reduce_boundary) {
   HumanDetector detector;
   cv::Rect r1(414, 0, 321, 642);
   cv::Rect r2(446, 45, 257, 514);
-  EXPECT_EQ(r2, detector.improve_boundary(r1));
+  std::vector < cv::Rect > expected;
+  std::vector < cv::Rect > input;
+  expected.push_back(r2);
+  input.push_back(r1);
+  EXPECT_EQ(expected, detector.improveBoundary(input));
 }
 
