@@ -7,12 +7,17 @@ add_executable(
     DescriptorMock.hpp
     ../app/Descriptor.cpp
     ../app/HumanDetector.cpp
+    ImageInputTest.cpp
+    ReaderWriterMock.cpp
+    ../app/ReaderWriter.cpp
+    ../app/ImageInput.cpp
+    ImageOutputTest.cpp
+    ../app/ImageOutput.cpp
 )
 target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
                                            ${CMAKE_SOURCE_DIR}/include
                                            ${OpenCV_INCLUDE_DIRS}
-                                           ../vendor/googletest/googlemock/include
                                            ${CMAKE_CURRENT_SOURCE_DIR})
-target_link_libraries(cpp-test PUBLIC gtest gmock)
+target_link_libraries(cpp-test PUBLIC gtest)
 find_package( OpenCV REQUIRED PATHS ../vendor/opencv/build)
 target_link_libraries(cpp-test PUBLIC ${OpenCV_LIBS})
