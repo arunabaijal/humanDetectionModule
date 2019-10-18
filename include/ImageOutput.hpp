@@ -30,6 +30,14 @@ class ImageOutput {
    * @return Mat image of drawn image
    */
   cv::Mat drawBoundary(cv::Mat image, std::vector<cv::Rect> boundary);
+
+  IReaderWriter* getWriter() const {
+    return writer;
+  }
+
+  void setWriter(IReaderWriter* writer) {
+    this->writer = writer;
+  }
 };
 
 #endif  // INCLUDE_IMAGEOUTPUT_HPP_
