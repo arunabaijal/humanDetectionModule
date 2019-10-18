@@ -8,6 +8,7 @@
 #ifndef INCLUDE_IREADERWRITER_HPP_
 #define INCLUDE_IREADERWRITER_HPP_
 
+#include <iostream>
 #include <opencv2/core/mat.hpp>
 #include <opencv2/core/types.hpp>
 #include <opencv2/imgcodecs.hpp>
@@ -19,7 +20,7 @@ class IReaderWriter {
    * @param std::String with image path
    * @return cv::Mat image in Mat format
    */
-  virtual cv::Mat read(std::String imagePath) = 0;
+  virtual cv::Mat read(std::string imagePath) = 0;
   /*
    * @brief Virtual function for interface
    * @param cv::Mat original image
