@@ -15,7 +15,7 @@ class ReaderWriter : public IReaderWriter {
    * @param std::String with image path
    * @return cv::Mat image in Mat format
    */
-  cv::Mat read(std::String imagePath);
+  cv::Mat read(std::string imagePath);
   /*
    * @param cv::Mat original image
    * @param cv::Rect boundary of detected human in image.
