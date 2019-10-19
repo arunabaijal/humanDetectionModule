@@ -11,6 +11,7 @@
 #include <opencv2/core/mat.hpp>
 #include <opencv2/core/types.hpp>
 
+
 /*TEST(humanDetector, no_human_found) {
   HumanDetector detector;
   auto detectorMock = new DescriptorMock();
@@ -24,8 +25,8 @@
 
 TEST(humanDetector, one_human_found) {
   HumanDetector detector;
-  auto detectorMock = new DescriptorMock();
-  detector.setDescriptor(detectorMock);
+  auto descriptor = new DescriptorMock();
+  detector.setDescriptor(descriptor);
   cv::Rect r(446, 45, 257, 514);
   std::vector < cv::Rect > expected;
   expected.push_back(r);

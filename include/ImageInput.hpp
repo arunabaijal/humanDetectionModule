@@ -11,6 +11,8 @@
 #include <opencv2/core/mat.hpp>
 #include <opencv2/core/types.hpp>
 #include <IReaderWriter.hpp>
+#include <iostream>
+#include <string>
 
 class ImageInput {
  private:
@@ -22,7 +24,7 @@ class ImageInput {
    * @param image Mat representation of the image
    * @return vector<Rect> value of boundaries detected
    */
-  cv::Mat readImage(std::String imagePath);
+  cv::Mat readImage(std::string imagePath);
 
   cv::Mat getImageFrame() const {
     return imageFrame;
@@ -30,6 +32,14 @@ class ImageInput {
 
   void setImageFrame(cv::Mat imageFrame) {
     this->imageFrame = imageFrame;
+  }
+
+  IReaderWriter* getReader() const {
+    return reader;
+  }
+
+  void setReader(IReaderWriter* reader) {
+    this->reader = reader;
   }
 };
 

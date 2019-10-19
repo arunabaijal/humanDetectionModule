@@ -2,13 +2,17 @@
 #define INCLUDE_DESCRIPTORMOCK_HPP_
 
 #include <IDescriptor.hpp>
-#include <gmock/gmock.h>
 #include <opencv2/core/mat.hpp>
 #include <opencv2/core/types.hpp>
 
 class DescriptorMock : public virtual IDescriptor {
  public:
-  MOCK_METHOD1( detect, std::vector<cv::Rect>( cv::Mat image ) );
+  std::vector<cv::Rect> detect(cv::Mat image) {
+    cv::Rect r1(414, 0, 321, 642);
+    std::vector<cv::Rect> detectedMock;
+    detectedMock.push_back(r1);
+    return detectedMock;
+  }
 };
 
 #endif  // INCLUDE_DESCRIPTORMOCK_HPP_
