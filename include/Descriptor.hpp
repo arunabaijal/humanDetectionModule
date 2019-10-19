@@ -9,6 +9,7 @@
 
 #include <IDescriptor.hpp>
 #include <opencv2/objdetect.hpp>
+#include <opencv2/core/types.hpp>
 
 class Descriptor : public virtual IDescriptor {
  private:
