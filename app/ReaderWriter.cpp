@@ -7,15 +7,14 @@
 
 #include <ReaderWriter.hpp>
 
-ReaderWriter::ReaderWriter {}
-
-cv::Mat ReaderWriter::read(std::String imagePath) {
+cv::Mat ReaderWriter::read(std::string imagePath) {
   // convert the image file into Mat format
-  cvImage = cv::imread(imagePath);
-  if (cvImage == NULL) {
+  cv::Mat cvImage = cv::imread(imagePath);
+  // check validity of image
+  if (cvImage.empty()) {
     throw "Invalid file path";
   }
-  return cvImage;
+  return cv::imread(imagePath);;
 }
 
 cv::Mat ReaderWriter::drawRectangle(cv::Mat image, cv::Rect boundary) {
@@ -27,5 +26,5 @@ cv::Mat ReaderWriter::drawRectangle(cv::Mat image, cv::Rect boundary) {
 
 void ReaderWriter::showImage(cv::Mat image) {
   // display image on screen
-  cv:imshow("Detector", image);
+  cv::imshow("Detector", image);
 }
