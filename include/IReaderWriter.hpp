@@ -9,6 +9,7 @@
 #define INCLUDE_IREADERWRITER_HPP_
 
 #include <iostream>
+#include <string>
 #include <opencv2/core/mat.hpp>
 #include <opencv2/core/types.hpp>
 #include <opencv2/imgcodecs.hpp>
@@ -32,7 +33,7 @@ class IReaderWriter {
    * @brief Virtual function for interface
    * @param cv::Mat image to display.
    */
-  virtual void showImage(cv::Mat) = 0;
+  virtual void showImage(cv::Mat image) = 0;
 };
 
 #endif  // INCLUDE_IREADERWRITER_HPP_
