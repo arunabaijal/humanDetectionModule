@@ -1,8 +1,8 @@
 /*@
  *@file ImageOutput.hpp
- *@author Aruna Baijal
+ *@author Aruna Baijal and Umang Rastogi
  *@brief This class controls the module that shows the output image with boundary
- *@copyright 2019 Aruna Baijal
+ *@copyright 2019 Aruna Baijal and Umang Rastogi
  */
 #ifndef INCLUDE_IMAGEOUTPUT_HPP_
 #define INCLUDE_IMAGEOUTPUT_HPP_
@@ -30,6 +30,22 @@ class ImageOutput {
    * @return Mat image of drawn image
    */
   cv::Mat drawBoundary(cv::Mat image, std::vector<cv::Rect> boundary);
+
+  std::vector<cv::Rect> getBoundary() const {
+    return boundary;
+  }
+
+  void setBoundary(std::vector<cv::Rect> boundary) {
+    this->boundary = boundary;
+  }
+
+  cv::Mat getOutputImage() const {
+    return outputImage;
+  }
+
+  void setOutputImage(cv::Mat outputImage) {
+    this->outputImage = outputImage;
+  }
 
   IReaderWriter* getWriter() const {
     return writer;
