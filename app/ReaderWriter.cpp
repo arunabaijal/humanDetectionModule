@@ -11,7 +11,11 @@ ReaderWriter::ReaderWriter {}
 
 cv::Mat ReaderWriter::read(std::String imagePath) {
   // convert the image file into Mat format
-  return cv::imread(imagePath);
+  cvImage = cv::imread(imagePath);
+  if (cvImage == NULL) {
+    throw "Invalid file path";
+  }
+  return cvImage;
 }
 
 cv::Mat ReaderWriter::drawRectangle(cv::Mat image, cv::Rect boundary) {
