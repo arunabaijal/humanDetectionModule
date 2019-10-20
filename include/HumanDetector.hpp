@@ -7,6 +7,7 @@
 #ifndef INCLUDE_HUMANDETECTOR_HPP_
 #define INCLUDE_HUMANDETECTOR_HPP_
 
+#include <iostream>
 #include <IDescriptor.hpp>
 #include <opencv2/core/mat.hpp>
 #include <opencv2/core/types.hpp>
