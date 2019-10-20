@@ -25,7 +25,7 @@ class ReaderWriter : public IReaderWriter {
   /*
    * @param cv::Mat image to display.
    */
-  void showImage(cv::Mat);
+  void showImage(cv::Mat image);
 };
 
 #endif  // INCLUDE_READERWRITER_HPP_
