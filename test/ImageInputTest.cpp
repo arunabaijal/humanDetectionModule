@@ -1,6 +1,12 @@
+/*@
+ *@file ImageInputTest.cpp
+ *@author Aruna Baijal
+ *@brief Unit test cases for ImageInput
+ *@copyright 2019 Aruna Baijal
+ */
 #include <gtest/gtest.h>
 #include <ImageInput.hpp>
-#include <ReaderWriterMock.cpp>
+#include <ReaderWriterMock.hpp>
 
 TEST(imageInput, validFile) {
   ImageInput testClass;
@@ -18,9 +24,9 @@ TEST(imageInput, invalidFile) {
   testClass.setReader(readerMock);
   try {
   cv::Mat result = testClass.readImage("01_Human.jpg");
-  FAIL();  //"Expected std::invalid file path exception
+    FAIL();  // "Expected std::invalid file path exception
   }
   catch(std::exception& err) {
-    EXPECT_EQ(err.what(),std::string("Invalid File Path"));
+    EXPECT_EQ(err.what(), std::string("Invalid File Path"));
   }
 }

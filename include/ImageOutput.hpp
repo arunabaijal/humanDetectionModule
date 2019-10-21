@@ -7,10 +7,11 @@
 #ifndef INCLUDE_IMAGEOUTPUT_HPP_
 #define INCLUDE_IMAGEOUTPUT_HPP_
 
+#include <vector>
+#include <IReaderWriter.hpp>
 #include <opencv2/objdetect.hpp>
 #include <opencv2/core/mat.hpp>
 #include <opencv2/core/types.hpp>
-#include <IReaderWriter.hpp>
 
 class ImageOutput {
  private:

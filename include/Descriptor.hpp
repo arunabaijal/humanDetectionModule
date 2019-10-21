@@ -7,6 +7,7 @@
 #ifndef INCLUDE_DESCRIPTOR_HPP_
 #define INCLUDE_DESCRIPTOR_HPP_
 
+#include <vector>
 #include <IDescriptor.hpp>
 #include <opencv2/objdetect.hpp>
 #include <opencv2/core/types.hpp>

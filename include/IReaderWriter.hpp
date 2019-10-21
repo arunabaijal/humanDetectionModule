@@ -8,6 +8,7 @@
 #ifndef INCLUDE_IREADERWRITER_HPP_
 #define INCLUDE_IREADERWRITER_HPP_
 
+#include <vector>
 #include <iostream>
 #include <string>
 #include <opencv2/core/mat.hpp>

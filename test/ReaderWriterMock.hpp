@@ -1,6 +1,13 @@
-#ifndef INCLUDE_READERWRITERMOCK_HPP_
-#define INCLUDE_READERWRITERMOCK_HPP_
+/*@
+ *@file ReaderWriteMock.hpp
+ *@author Aruna Baijal
+ *@brief Mock implementation for testing
+ *@copyright 2019 Aruna Baijal
+ */
+#ifndef TEST_READERWRITERMOCK_HPP_
+#define TEST_READERWRITERMOCK_HPP_
 
+#include <string>
 #include <IReaderWriter.hpp>
 #include <opencv2/core/mat.hpp>
 #include <opencv2/core/types.hpp>
@@ -15,10 +22,8 @@ class ReaderWriterMock : public virtual IReaderWriter {
     cv::Mat Z = cv::Mat::zeros(3, 3, CV_8UC1);
     return Z;
   }
-
   void showImage(cv::Mat) {
-
   }
 };
 
-#endif  // INCLUDE_READERWRITERMOCK_HPP_
+#endif  // TEST_READERWRITERMOCK_HPP_

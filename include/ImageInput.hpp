@@ -7,12 +7,12 @@
 #ifndef INCLUDE_IMAGEINPUT_HPP_
 #define INCLUDE_IMAGEINPUT_HPP_
 
+#include <iostream>
+#include <string>
+#include <IReaderWriter.hpp>
 #include <opencv2/objdetect.hpp>
 #include <opencv2/core/mat.hpp>
 #include <opencv2/core/types.hpp>
-#include <IReaderWriter.hpp>
-#include <iostream>
-#include <string>
 
 class ImageInput {
  private:

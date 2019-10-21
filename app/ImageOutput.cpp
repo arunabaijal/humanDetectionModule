@@ -1,3 +1,9 @@
+/*@
+ *@file ImageOutput.cpp
+ *@author Umang Rastogi
+ *@brief This class displays an image with results.
+ *@copyright 2019 Umang Rastogi
+ */
 #include <ImageOutput.hpp>
 
 void ImageOutput::showImage(cv::Mat image) {

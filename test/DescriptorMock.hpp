@@ -1,6 +1,13 @@
-#ifndef INCLUDE_DESCRIPTORMOCK_HPP_
-#define INCLUDE_DESCRIPTORMOCK_HPP_
+/*@
+ *@file DescriptorMock.hpp
+ *@author Aruna Baijal
+ *@brief Mock implementation for testing
+ *@copyright 2019 Aruna Baijal
+ */
+#ifndef TEST_DESCRIPTORMOCK_HPP_
+#define TEST_DESCRIPTORMOCK_HPP_
 
+#include <vector>
 #include <IDescriptor.hpp>
 #include <opencv2/core/mat.hpp>
 #include <opencv2/core/types.hpp>
@@ -15,4 +22,4 @@ class DescriptorMock : public virtual IDescriptor {
   }
 };
 
-#endif  // INCLUDE_DESCRIPTORMOCK_HPP_
+#endif  // TEST_DESCRIPTORMOCK_HPP_
