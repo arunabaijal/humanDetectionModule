@@ -1,8 +1,8 @@
 /*@
  *@file HumanDetector.hpp
- *@author Aruna Baijal
+ *@author Aruna Baijal and Achal Vyas
  *@brief This class controls the module that detects humans in an image vector
- *@copyright 2019 Aruna Baijal
+ *@copyright 2019 Aruna Baijal and Achal Vyas
  */
 #ifndef INCLUDE_HUMANDETECTOR_HPP_
 #define INCLUDE_HUMANDETECTOR_HPP_
@@ -11,6 +11,7 @@
 #include <IDescriptor.hpp>
 #include <opencv2/core/mat.hpp>
 #include <opencv2/core/types.hpp>
+#include <opencv2/core/fast_math.hpp>
 
 class HumanDetector {
  private:
