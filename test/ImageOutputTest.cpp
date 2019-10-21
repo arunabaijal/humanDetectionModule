@@ -1,6 +1,12 @@
+/*@
+ *@file ImageOutputTest.cpp
+ *@author Aruna Baijal
+ *@brief Unit test cases for ImageOutput
+ *@copyright 2019 Aruna Baijal
+ */
 #include <gtest/gtest.h>
 #include <ImageOutput.hpp>
-#include <ReaderWriterMock.cpp>
+#include <ReaderWriterMock.hpp>
 
 TEST(imageOutput, drawBoundary) {
   ImageOutput testClass;

@@ -7,12 +7,12 @@
 #ifndef INCLUDE_IMAGEINPUT_HPP_
 #define INCLUDE_IMAGEINPUT_HPP_
 
+#include <iostream>
+#include <string>
+#include <IReaderWriter.hpp>
 #include <opencv2/objdetect.hpp>
 #include <opencv2/core/mat.hpp>
 #include <opencv2/core/types.hpp>
-#include <IReaderWriter.hpp>
-#include <iostream>
-#include <string>
 
 class ImageInput {
  private:
@@ -20,6 +20,9 @@ class ImageInput {
   IReaderWriter* reader;
 
  public:
+  ImageInput() {
+  }
+
   /*
    * @param image Mat representation of the image
    * @return vector<Rect> value of boundaries detected
@@ -31,15 +34,15 @@ class ImageInput {
   }
 
   void setImageFrame(cv::Mat imageFrame) {
-    this->imageFrame = imageFrame;
+    imageFrame = imageFrame;
   }
 
   IReaderWriter* getReader() const {
     return reader;
   }
 
-  void setReader(IReaderWriter* reader) {
-    this->reader = reader;
+  void setReader(IReaderWriter* r) {
+    reader = r;
   }
 };
 

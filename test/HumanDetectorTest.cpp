@@ -11,18 +11,6 @@
 #include <opencv2/core/mat.hpp>
 #include <opencv2/core/types.hpp>
 
-
-/*TEST(humanDetector, no_human_found) {
-  HumanDetector detector;
-  auto detectorMock = new DescriptorMock();
-  detector.setDescriptor(detectorMock);
-  cv::Rect r(446, 45, 257, 514);
-  std::vector < cv::Rect > expected;
-  expected.push_back(r);
-  cv::Mat sampleImage = cv::imread("1_Human.jpg", 1);
-  EXPECT_EQ(expected, detector.detectHuman(sampleImage));
- }*/
-
 TEST(humanDetector, one_human_found) {
   HumanDetector detector;
   auto descriptor = new DescriptorMock();
@@ -31,19 +19,10 @@ TEST(humanDetector, one_human_found) {
   std::vector < cv::Rect > expected;
   expected.push_back(r);
   cv::Mat sampleImage = cv::imread("1_Human.jpg", 1);
-  EXPECT_EQ(expected, detector.detectHuman(sampleImage));
+  std::vector<cv::Rect> res = detector.detectHuman(sampleImage);
+  std::vector<cv::Rect> result = detector.improveBoundary(res);
+  EXPECT_EQ(expected, result);
 }
-
-/*TEST(humanDetector, two_humans_found) {
-  HumanDetector detector;
-  auto detectorMock = new DescriptorMock();
-  detector.setDescriptor(detectorMock);
-  cv::Rect r(446, 45, 257, 514);
-  std::vector < cv::Rect > expected;
-  expected.push_back(r);
-  cv::Mat sampleImage = cv::imread("1_Human.jpg", 1);
-  EXPECT_EQ(expected, detector.detectHuman(sampleImage));
- }*/
 
 TEST(humanDetector, should_reduce_boundary) {
   HumanDetector detector;

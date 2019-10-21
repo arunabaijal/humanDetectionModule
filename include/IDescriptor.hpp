@@ -7,6 +7,7 @@
 #ifndef INCLUDE_IDESCRIPTOR_HPP_
 #define INCLUDE_IDESCRIPTOR_HPP_
 
+#include <vector>
 #include <opencv2/core/mat.hpp>
 #include <opencv2/core/types.hpp>
 
