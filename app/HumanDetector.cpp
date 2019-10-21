@@ -1,8 +1,8 @@
 /*@
  *@file HumanDetector.cpp
- *@author Aruna Baijal
+ *@author Aruna Baijal and Achal Vyas
  *@brief This class detects humans with optimized boundaries.
- *@copyright 2019 Aruna Baijal
+ *@copyright 2019 Aruna Baijal and Achal Vyas
  */
 #include <HumanDetector.hpp>
 
@@ -22,5 +22,5 @@ std::vector<cv::Rect> HumanDetector::improveBoundary(
     bound.height = cvRound(bound.height * 0.8);
     finalBoundary.push_back(bound);  // create new vector for optimized boundary
   }
-  return finalBoundary;
+  return finalBoundary;  // return optimized boundary
 }
