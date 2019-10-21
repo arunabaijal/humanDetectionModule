@@ -14,7 +14,6 @@
 
 class ImageOutput {
  private:
-  cv::Mat outputImage;
   std::vector<cv::Rect> boundary;
   IReaderWriter* writer;
 
@@ -37,14 +36,6 @@ class ImageOutput {
 
   void setBoundary(std::vector<cv::Rect> boundary) {
     this->boundary = boundary;
-  }
-
-  cv::Mat getOutputImage() const {
-    return outputImage;
-  }
-
-  void setOutputImage(cv::Mat outputImage) {
-    this->outputImage = outputImage;
   }
 
   IReaderWriter* getWriter() const {
