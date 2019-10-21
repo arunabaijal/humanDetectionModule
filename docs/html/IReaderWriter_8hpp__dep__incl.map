@@ -1,0 +1,12 @@
+<map id="include/IReaderWriter.hpp" name="include/IReaderWriter.hpp">
+<area shape="rect" id="node2" href="$main_8cpp.html" title="app/main.cpp" alt="" coords="167,155,267,181"/>
+<area shape="rect" id="node3" href="$ImageInput_8hpp.html" title="include/ImageInput.hpp" alt="" coords="138,80,295,107"/>
+<area shape="rect" id="node6" href="$ImageOutput_8hpp.html" title="include/ImageOutput.hpp" alt="" coords="564,80,731,107"/>
+<area shape="rect" id="node9" href="$ReaderWriter_8hpp.html" title="include/ReaderWriter.hpp" alt="" coords="371,80,540,107"/>
+<area shape="rect" id="node11" href="$ReaderWriterMock_8hpp.html" title="test/ReaderWriterMock.hpp" alt="" coords="755,80,937,107"/>
+<area shape="rect" id="node4" href="$ImageInput_8cpp.html" title="app/ImageInput.cpp" alt="" coords="5,155,143,181"/>
+<area shape="rect" id="node5" href="$ImageInputTest_8cpp.html" title="test/ImageInputTest.cpp" alt="" coords="291,155,455,181"/>
+<area shape="rect" id="node7" href="$ImageOutput_8cpp.html" title="app/ImageOutput.cpp" alt="" coords="653,155,799,181"/>
+<area shape="rect" id="node8" href="$ImageOutputTest_8cpp.html" title="test/ImageOutputTest.cpp" alt="" coords="824,155,999,181"/>
+<area shape="rect" id="node10" href="$ReaderWriter_8cpp.html" title="app/ReaderWriter.cpp" alt="" coords="479,155,629,181"/>
+</map>

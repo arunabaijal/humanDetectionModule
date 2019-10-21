@@ -1,0 +1,23 @@
+./app/HumanDetector.cpp:10:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+Done processing ./app/HumanDetector.cpp
+Done processing ./app/ImageInput.cpp
+./app/Descriptor.cpp:10:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+Done processing ./app/Descriptor.cpp
+Done processing ./app/ImageOutput.cpp
+Done processing ./app/main.cpp
+Done processing ./app/ReaderWriter.cpp
+Done processing ./include/ImageOutput.hpp
+Done processing ./include/HumanDetector.hpp
+Done processing ./include/ReaderWriter.hpp
+Done processing ./include/Descriptor.hpp
+Done processing ./include/IDescriptor.hpp
+Done processing ./include/IReaderWriter.hpp
+Done processing ./include/ImageInput.hpp
+Done processing ./test/ReaderWriterMock.hpp
+Done processing ./test/test.cpp
+Done processing ./test/ImageInputTest.cpp
+Done processing ./test/DescriptorMock.hpp
+Done processing ./test/HumanDetectorTest.cpp
+Done processing ./test/ImageOutputTest.cpp
+Total errors found: 2
+

@@ -1,4 +1,4 @@
-add_executable(shell-app main.cpp ImageOutput.cpp ImageInput.cpp HumanDetector.cpp Descriptor.cpp)
+add_executable(shell-app main.cpp ImageOutput.cpp ImageInput.cpp HumanDetector.cpp Descriptor.cpp ReaderWriter.cpp)
 include_directories(
     ${CMAKE_SOURCE_DIR}/include
     ${OpenCV_INCLUDE_DIRS}

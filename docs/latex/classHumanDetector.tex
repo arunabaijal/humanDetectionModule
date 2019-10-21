@@ -1,0 +1,133 @@
+\hypertarget{classHumanDetector}{}\section{Human\+Detector Class Reference}
+\label{classHumanDetector}\index{Human\+Detector@{Human\+Detector}}
+
+
+{\ttfamily \#include $<$Human\+Detector.\+hpp$>$}
+
+
+
+Collaboration diagram for Human\+Detector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classHumanDetector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHumanDetector_a8910bbd14716e8e47a4f3d33daeb5eba}{Human\+Detector} ()
+\item 
+std\+::vector$<$ cv\+::\+Rect $>$ \hyperlink{classHumanDetector_ac3c3f22f9c79dc927085f9d0bea7aeac}{detect\+Human} (cv\+::\+Mat image)
+\item 
+std\+::vector$<$ cv\+::\+Rect $>$ \hyperlink{classHumanDetector_aa8923db715d106cfbe4ef5f4aadc87d0}{improve\+Boundary} (std\+::vector$<$ cv\+::\+Rect $>$ \hyperlink{classHumanDetector_acbdcb52dde539827a65d86829cc90ce3}{boundary})
+\item 
+std\+::vector$<$ cv\+::\+Rect $>$ \hyperlink{classHumanDetector_ae5ab3f70b303e82a52b779eaedcf7709}{get\+Boundary} () const 
+\item 
+void \hyperlink{classHumanDetector_a02a790efcb7f2619b6ccff2195b0a95a}{set\+Boundary} (std\+::vector$<$ cv\+::\+Rect $>$ bound)
+\item 
+cv\+::\+Mat \hyperlink{classHumanDetector_a0faff34f61f2c60e41f8b355de2b7700}{get\+Image\+Frame} () const 
+\item 
+void \hyperlink{classHumanDetector_ab20928eff64db213e7e43b4a41ba6b5e}{set\+Image\+Frame} (cv\+::\+Mat \hyperlink{classHumanDetector_a5a075756a9b9ff4f0fa9fcd5fbe757b8}{image\+Frame})
+\item 
+\hyperlink{classIDescriptor}{I\+Descriptor} $\ast$ \hyperlink{classHumanDetector_acadd0401a44143430c329ab9393027c8}{get\+Descriptor} () const 
+\item 
+void \hyperlink{classHumanDetector_a2e3d5a1f08d525599b706a76926f65d5}{set\+Descriptor} (\hyperlink{classIDescriptor}{I\+Descriptor} $\ast$desc)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIDescriptor}{I\+Descriptor} $\ast$ \hyperlink{classHumanDetector_a920f67ab988786133b5fd478a0711965}{descriptor}
+\item 
+std\+::vector$<$ cv\+::\+Rect $>$ \hyperlink{classHumanDetector_acbdcb52dde539827a65d86829cc90ce3}{boundary}
+\item 
+cv\+::\+Mat \hyperlink{classHumanDetector_a5a075756a9b9ff4f0fa9fcd5fbe757b8}{image\+Frame}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Human\+Detector@{Human\+Detector}!Human\+Detector@{Human\+Detector}}
+\index{Human\+Detector@{Human\+Detector}!Human\+Detector@{Human\+Detector}}
+\subsubsection[{\texorpdfstring{Human\+Detector()}{HumanDetector()}}]{\setlength{\rightskip}{0pt plus 5cm}Human\+Detector\+::\+Human\+Detector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classHumanDetector_a8910bbd14716e8e47a4f3d33daeb5eba}{}\label{classHumanDetector_a8910bbd14716e8e47a4f3d33daeb5eba}
+
+
+\subsection{Member Function Documentation}
+\index{Human\+Detector@{Human\+Detector}!detect\+Human@{detect\+Human}}
+\index{detect\+Human@{detect\+Human}!Human\+Detector@{Human\+Detector}}
+\subsubsection[{\texorpdfstring{detect\+Human(cv\+::\+Mat image)}{detectHuman(cv::Mat image)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ cv\+::\+Rect $>$ Human\+Detector\+::detect\+Human (
+\begin{DoxyParamCaption}
+\item[{cv\+::\+Mat}]{image}
+\end{DoxyParamCaption}
+)}\hypertarget{classHumanDetector_ac3c3f22f9c79dc927085f9d0bea7aeac}{}\label{classHumanDetector_ac3c3f22f9c79dc927085f9d0bea7aeac}
+\index{Human\+Detector@{Human\+Detector}!get\+Boundary@{get\+Boundary}}
+\index{get\+Boundary@{get\+Boundary}!Human\+Detector@{Human\+Detector}}
+\subsubsection[{\texorpdfstring{get\+Boundary() const }{getBoundary() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$cv\+::\+Rect$>$ Human\+Detector\+::get\+Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classHumanDetector_ae5ab3f70b303e82a52b779eaedcf7709}{}\label{classHumanDetector_ae5ab3f70b303e82a52b779eaedcf7709}
+\index{Human\+Detector@{Human\+Detector}!get\+Descriptor@{get\+Descriptor}}
+\index{get\+Descriptor@{get\+Descriptor}!Human\+Detector@{Human\+Detector}}
+\subsubsection[{\texorpdfstring{get\+Descriptor() const }{getDescriptor() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Descriptor}$\ast$ Human\+Detector\+::get\+Descriptor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classHumanDetector_acadd0401a44143430c329ab9393027c8}{}\label{classHumanDetector_acadd0401a44143430c329ab9393027c8}
+\index{Human\+Detector@{Human\+Detector}!get\+Image\+Frame@{get\+Image\+Frame}}
+\index{get\+Image\+Frame@{get\+Image\+Frame}!Human\+Detector@{Human\+Detector}}
+\subsubsection[{\texorpdfstring{get\+Image\+Frame() const }{getImageFrame() const }}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat Human\+Detector\+::get\+Image\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classHumanDetector_a0faff34f61f2c60e41f8b355de2b7700}{}\label{classHumanDetector_a0faff34f61f2c60e41f8b355de2b7700}
+\index{Human\+Detector@{Human\+Detector}!improve\+Boundary@{improve\+Boundary}}
+\index{improve\+Boundary@{improve\+Boundary}!Human\+Detector@{Human\+Detector}}
+\subsubsection[{\texorpdfstring{improve\+Boundary(std\+::vector$<$ cv\+::\+Rect $>$ boundary)}{improveBoundary(std::vector< cv::Rect > boundary)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ cv\+::\+Rect $>$ Human\+Detector\+::improve\+Boundary (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ cv\+::\+Rect $>$}]{boundary}
+\end{DoxyParamCaption}
+)}\hypertarget{classHumanDetector_aa8923db715d106cfbe4ef5f4aadc87d0}{}\label{classHumanDetector_aa8923db715d106cfbe4ef5f4aadc87d0}
+\index{Human\+Detector@{Human\+Detector}!set\+Boundary@{set\+Boundary}}
+\index{set\+Boundary@{set\+Boundary}!Human\+Detector@{Human\+Detector}}
+\subsubsection[{\texorpdfstring{set\+Boundary(std\+::vector$<$ cv\+::\+Rect $>$ bound)}{setBoundary(std::vector< cv::Rect > bound)}}]{\setlength{\rightskip}{0pt plus 5cm}void Human\+Detector\+::set\+Boundary (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ cv\+::\+Rect $>$}]{bound}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classHumanDetector_a02a790efcb7f2619b6ccff2195b0a95a}{}\label{classHumanDetector_a02a790efcb7f2619b6ccff2195b0a95a}
+\index{Human\+Detector@{Human\+Detector}!set\+Descriptor@{set\+Descriptor}}
+\index{set\+Descriptor@{set\+Descriptor}!Human\+Detector@{Human\+Detector}}
+\subsubsection[{\texorpdfstring{set\+Descriptor(\+I\+Descriptor $\ast$desc)}{setDescriptor(IDescriptor *desc)}}]{\setlength{\rightskip}{0pt plus 5cm}void Human\+Detector\+::set\+Descriptor (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Descriptor} $\ast$}]{desc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classHumanDetector_a2e3d5a1f08d525599b706a76926f65d5}{}\label{classHumanDetector_a2e3d5a1f08d525599b706a76926f65d5}
+\index{Human\+Detector@{Human\+Detector}!set\+Image\+Frame@{set\+Image\+Frame}}
+\index{set\+Image\+Frame@{set\+Image\+Frame}!Human\+Detector@{Human\+Detector}}
+\subsubsection[{\texorpdfstring{set\+Image\+Frame(cv\+::\+Mat image\+Frame)}{setImageFrame(cv::Mat imageFrame)}}]{\setlength{\rightskip}{0pt plus 5cm}void Human\+Detector\+::set\+Image\+Frame (
+\begin{DoxyParamCaption}
+\item[{cv\+::\+Mat}]{image\+Frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classHumanDetector_ab20928eff64db213e7e43b4a41ba6b5e}{}\label{classHumanDetector_ab20928eff64db213e7e43b4a41ba6b5e}
+
+
+\subsection{Member Data Documentation}
+\index{Human\+Detector@{Human\+Detector}!boundary@{boundary}}
+\index{boundary@{boundary}!Human\+Detector@{Human\+Detector}}
+\subsubsection[{\texorpdfstring{boundary}{boundary}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$cv\+::\+Rect$>$ Human\+Detector\+::boundary\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classHumanDetector_acbdcb52dde539827a65d86829cc90ce3}{}\label{classHumanDetector_acbdcb52dde539827a65d86829cc90ce3}
+\index{Human\+Detector@{Human\+Detector}!descriptor@{descriptor}}
+\index{descriptor@{descriptor}!Human\+Detector@{Human\+Detector}}
+\subsubsection[{\texorpdfstring{descriptor}{descriptor}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Descriptor}$\ast$ Human\+Detector\+::descriptor\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classHumanDetector_a920f67ab988786133b5fd478a0711965}{}\label{classHumanDetector_a920f67ab988786133b5fd478a0711965}
+\index{Human\+Detector@{Human\+Detector}!image\+Frame@{image\+Frame}}
+\index{image\+Frame@{image\+Frame}!Human\+Detector@{Human\+Detector}}
+\subsubsection[{\texorpdfstring{image\+Frame}{imageFrame}}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat Human\+Detector\+::image\+Frame\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classHumanDetector_a5a075756a9b9ff4f0fa9fcd5fbe757b8}{}\label{classHumanDetector_a5a075756a9b9ff4f0fa9fcd5fbe757b8}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{HumanDetector_8hpp}{Human\+Detector.\+hpp}\item 
+app/\hyperlink{HumanDetector_8cpp}{Human\+Detector.\+cpp}\end{DoxyCompactItemize}
