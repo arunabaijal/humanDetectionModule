@@ -1,0 +1,101 @@
+\hypertarget{classImageInput}{}\section{Image\+Input Class Reference}
+\label{classImageInput}\index{Image\+Input@{Image\+Input}}
+
+
+{\ttfamily \#include $<$Image\+Input.\+hpp$>$}
+
+
+
+Collaboration diagram for Image\+Input\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{classImageInput__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classImageInput_aca508a0b68659c71ad378cc0f2250298}{Image\+Input} ()
+\item 
+cv\+::\+Mat \hyperlink{classImageInput_a900eac6479654160858d9fe344bbf6d6}{read\+Image} (std\+::string image\+Path)
+\item 
+cv\+::\+Mat \hyperlink{classImageInput_a084f7e45ebe22d2ebbb507e7e1886988}{get\+Image\+Frame} () const 
+\item 
+void \hyperlink{classImageInput_ab2b3f3771c15d7172c4cd10dcb0d573e}{set\+Image\+Frame} (cv\+::\+Mat \hyperlink{classImageInput_a94723568a2a817760fe4e38fc11efb25}{image\+Frame})
+\item 
+\hyperlink{classIReaderWriter}{I\+Reader\+Writer} $\ast$ \hyperlink{classImageInput_a4b49b8a4ec9713412416ebd6de3753de}{get\+Reader} () const 
+\item 
+void \hyperlink{classImageInput_af61cc921f9911bef3d749fbc87ddf811}{set\+Reader} (\hyperlink{classIReaderWriter}{I\+Reader\+Writer} $\ast$r)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+cv\+::\+Mat \hyperlink{classImageInput_a94723568a2a817760fe4e38fc11efb25}{image\+Frame}
+\item 
+\hyperlink{classIReaderWriter}{I\+Reader\+Writer} $\ast$ \hyperlink{classImageInput_a23a93c13b57550831c58c0b5485efe01}{reader}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Image\+Input@{Image\+Input}!Image\+Input@{Image\+Input}}
+\index{Image\+Input@{Image\+Input}!Image\+Input@{Image\+Input}}
+\subsubsection[{\texorpdfstring{Image\+Input()}{ImageInput()}}]{\setlength{\rightskip}{0pt plus 5cm}Image\+Input\+::\+Image\+Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classImageInput_aca508a0b68659c71ad378cc0f2250298}{}\label{classImageInput_aca508a0b68659c71ad378cc0f2250298}
+
+
+\subsection{Member Function Documentation}
+\index{Image\+Input@{Image\+Input}!get\+Image\+Frame@{get\+Image\+Frame}}
+\index{get\+Image\+Frame@{get\+Image\+Frame}!Image\+Input@{Image\+Input}}
+\subsubsection[{\texorpdfstring{get\+Image\+Frame() const }{getImageFrame() const }}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat Image\+Input\+::get\+Image\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classImageInput_a084f7e45ebe22d2ebbb507e7e1886988}{}\label{classImageInput_a084f7e45ebe22d2ebbb507e7e1886988}
+\index{Image\+Input@{Image\+Input}!get\+Reader@{get\+Reader}}
+\index{get\+Reader@{get\+Reader}!Image\+Input@{Image\+Input}}
+\subsubsection[{\texorpdfstring{get\+Reader() const }{getReader() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Reader\+Writer}$\ast$ Image\+Input\+::get\+Reader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classImageInput_a4b49b8a4ec9713412416ebd6de3753de}{}\label{classImageInput_a4b49b8a4ec9713412416ebd6de3753de}
+\index{Image\+Input@{Image\+Input}!read\+Image@{read\+Image}}
+\index{read\+Image@{read\+Image}!Image\+Input@{Image\+Input}}
+\subsubsection[{\texorpdfstring{read\+Image(std\+::string image\+Path)}{readImage(std::string imagePath)}}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat Image\+Input\+::read\+Image (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{image\+Path}
+\end{DoxyParamCaption}
+)}\hypertarget{classImageInput_a900eac6479654160858d9fe344bbf6d6}{}\label{classImageInput_a900eac6479654160858d9fe344bbf6d6}
+\index{Image\+Input@{Image\+Input}!set\+Image\+Frame@{set\+Image\+Frame}}
+\index{set\+Image\+Frame@{set\+Image\+Frame}!Image\+Input@{Image\+Input}}
+\subsubsection[{\texorpdfstring{set\+Image\+Frame(cv\+::\+Mat image\+Frame)}{setImageFrame(cv::Mat imageFrame)}}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+Input\+::set\+Image\+Frame (
+\begin{DoxyParamCaption}
+\item[{cv\+::\+Mat}]{image\+Frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classImageInput_ab2b3f3771c15d7172c4cd10dcb0d573e}{}\label{classImageInput_ab2b3f3771c15d7172c4cd10dcb0d573e}
+\index{Image\+Input@{Image\+Input}!set\+Reader@{set\+Reader}}
+\index{set\+Reader@{set\+Reader}!Image\+Input@{Image\+Input}}
+\subsubsection[{\texorpdfstring{set\+Reader(\+I\+Reader\+Writer $\ast$r)}{setReader(IReaderWriter *r)}}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+Input\+::set\+Reader (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Reader\+Writer} $\ast$}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classImageInput_af61cc921f9911bef3d749fbc87ddf811}{}\label{classImageInput_af61cc921f9911bef3d749fbc87ddf811}
+
+
+\subsection{Member Data Documentation}
+\index{Image\+Input@{Image\+Input}!image\+Frame@{image\+Frame}}
+\index{image\+Frame@{image\+Frame}!Image\+Input@{Image\+Input}}
+\subsubsection[{\texorpdfstring{image\+Frame}{imageFrame}}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat Image\+Input\+::image\+Frame\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classImageInput_a94723568a2a817760fe4e38fc11efb25}{}\label{classImageInput_a94723568a2a817760fe4e38fc11efb25}
+\index{Image\+Input@{Image\+Input}!reader@{reader}}
+\index{reader@{reader}!Image\+Input@{Image\+Input}}
+\subsubsection[{\texorpdfstring{reader}{reader}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Reader\+Writer}$\ast$ Image\+Input\+::reader\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classImageInput_a23a93c13b57550831c58c0b5485efe01}{}\label{classImageInput_a23a93c13b57550831c58c0b5485efe01}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{ImageInput_8hpp}{Image\+Input.\+hpp}\item 
+app/\hyperlink{ImageInput_8cpp}{Image\+Input.\+cpp}\end{DoxyCompactItemize}

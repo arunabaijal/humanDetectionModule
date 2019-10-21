@@ -1,0 +1,111 @@
+\href{https://travis-ci.org/urastogi885/humanDetectionModule}{\tt } \subsection*{\href{https://coveralls.io/github/urastogi885/humanDetectionModule?branch=master}{\tt } }
+
+\subsection*{Overview}
+
+Human Detection module for A\+C\+ME Robotics with\+:
+
+
+\begin{DoxyItemize}
+\item cmake
+\item googletest
+\end{DoxyItemize}
+
+We are designing a new human detection module by incorporating high-\/quality software engineering practices for Acme Robotics to take our deliverable, finish development, and integrate it into their product.
+
+Detection and avoidance of human obstacles play a crucial role in any self-\/driving system. The design and development of real-\/time obstacle detection systems are currently one of the most demanding components in the autonomous industry. To address real-\/life problems involved in obstacle detection, a plethora of sensors such as L\+I\+D\+A\+Rs, Radars, and cameras, are being used in the industry. We are making use of the most readily available resource, images, to identify human obstacles.
+
+Our module will be able to identify multiple humans in an image. The final deliverable of our module will be a set of images with location information of the detected humans. The robot\textquotesingle{}s system will be able to use this location information. We are assuming the input and output of our module to be a set of static images.
+
+The module is still under development. After the final stage of development, the module will be capable of detecting multiple humans within a frame. We will add results and performance examples by the end of phase 2.
+
+\subsection*{Team Members}
+
+All of the team members are pursuing M.\+Eng. in Robotics at the University of Maryland.
+
+
+\begin{DoxyItemize}
+\item Umang Rastogi -\/ B.\+Tech in Electronics \& Communication Engineering
+\item Aruna Baijal -\/ B.\+Tech in Computer Science \& Engineering
+\item Achal Vyas -\/ B.\+Tech in Mechanical Engineering
+\end{DoxyItemize}
+
+\subsection*{License}
+
+
+\begin{DoxyItemize}
+\item This module has been developed under the 3-\/\+Clause B\+SD License.
+\item Please go through the \href{https://github.com/urastogi885/humanDetectionModule/blob/phase1/LICENSE}{\tt {\itshape L\+I\+C\+E\+N\+SE}} file before cloning the repository.
+\end{DoxyItemize}
+
+\subsection*{A\+IP and Sprint Documents}
+
+
+\begin{DoxyItemize}
+\item Click on this \href{https://docs.google.com/spreadsheets/d/1oHHijKNsoFVp84mNC5g5sJ4BwJQwT6XpO5uRFw9AMzE/edit?usp=sharing}{\tt {\itshape link}} to access our A\+IP Google Sheet.
+\item Click on this \href{https://docs.google.com/document/d/13PsjxV7XgBc0alKm0SCArrKI3s-3ExToed2AtDfnuaQ/edit?usp=sharing}{\tt {\itshape link}} to access our Sprint notes document.
+\end{DoxyItemize}
+
+\subsection*{Install Open\+CV}
+
+
+\begin{DoxyItemize}
+\item The module utilizes features of Open\+CV.
+\item Although the repository contains Open\+CV library under the vendor directory, please update you system with necessary dependencies.
+\item Run the commands below to install Open\+CV dependencies before cloning the repository\+: 
+\begin{DoxyCode}
+1 sudo apt-get install build-essential
+2 sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+3 sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev
+       libjasper-dev libdc1394-22-dev
+\end{DoxyCode}
+
+\end{DoxyItemize}
+
+\subsection*{Standard install via command-\/line}
+
+
+\begin{DoxyItemize}
+\item Switch to the directory where you want to clone this repository
+\item Run the following command\+: 
+\begin{DoxyCode}
+1 git clone --recursive https://travis-ci.org/urastogi885/humanDetectionModule
+2 mkdir build
+3 cd build/
+4 cmake ..
+5 make
+\end{DoxyCode}
+
+\end{DoxyItemize}
+
+\subsection*{Accessing the U\+ML Diagrams}
+
+
+\begin{DoxyItemize}
+\item Open the directory of the project
+\item Access U\+ML diagrams from the {\itshape initial} folder located within {\itshape U\+ML} sub-\/directory
+\end{DoxyItemize}
+
+\subsection*{Run}
+
+Within the {\itshape build} sub-\/directory, run\+: 
+\begin{DoxyCode}
+1 ./app/shell-app
+\end{DoxyCode}
+ This command will show nothing after execution as implementation has not been completed yet.
+
+\subsection*{Test}
+
+Within the {\itshape build} sub-\/directory, run\+: 
+\begin{DoxyCode}
+1 ./test/cpp-test
+\end{DoxyCode}
+
+
+\subsection*{Demo}
+
+\subsection*{Phase-\/1 Issues}
+
+
+\begin{DoxyItemize}
+\item T\+DD not completed for all classes such as \hyperlink{classImageOutput}{Image\+Output} 
+\end{DoxyItemize}
