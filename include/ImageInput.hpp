@@ -31,7 +31,7 @@ class ImageInput {
   }
 
   void setImageFrame(cv::Mat imageFrame) {
-    this->imageFrame = imageFrame;
+    imageFrame = imageFrame;
   }
 
   IReaderWriter* getReader() const {
@@ -39,7 +39,7 @@ class ImageInput {
   }
 
   void setReader(IReaderWriter* reader) {
-    this->reader = reader;
+    reader = reader;
   }
 };
 

@@ -36,7 +36,7 @@ class HumanDetector {
   }
 
   void setBoundary(std::vector<cv::Rect> boundary) {
-    this->boundary = boundary;
+    boundary = boundary;
   }
 
   cv::Mat getImageFrame() const {
@@ -44,7 +44,7 @@ class HumanDetector {
   }
 
   void setImageFrame(cv::Mat imageFrame) {
-    this->imageFrame = imageFrame;
+    imageFrame = imageFrame;
   }
 
   IDescriptor* getDescriptor() const {
@@ -52,7 +52,7 @@ class HumanDetector {
   }
 
   void setDescriptor(IDescriptor* descriptor) {
-    this->descriptor = descriptor;
+    descriptor = descriptor;
   }
 };
 

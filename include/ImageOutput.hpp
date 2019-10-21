@@ -35,7 +35,7 @@ class ImageOutput {
   }
 
   void setBoundary(std::vector<cv::Rect> boundary) {
-    this->boundary = boundary;
+    boundary = boundary;
   }
 
   IReaderWriter* getWriter() const {
@@ -43,7 +43,7 @@ class ImageOutput {
   }
 
   void setWriter(IReaderWriter* writer) {
-    this->writer = writer;
+    writer = writer;
   }
 };
 
