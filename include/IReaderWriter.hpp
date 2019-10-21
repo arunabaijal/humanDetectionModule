@@ -8,11 +8,14 @@
 #ifndef INCLUDE_IREADERWRITER_HPP_
 #define INCLUDE_IREADERWRITER_HPP_
 
+#include <vector>
 #include <iostream>
 #include <string>
 #include <opencv2/core/mat.hpp>
 #include <opencv2/core/types.hpp>
 #include <opencv2/imgcodecs.hpp>
+#include <opencv2/highgui.hpp>
+#include <opencv2/imgproc.hpp>
 
 class IReaderWriter {
  public:

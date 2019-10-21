@@ -8,7 +8,7 @@ add_executable(
     ../app/Descriptor.cpp
     ../app/HumanDetector.cpp
     ImageInputTest.cpp
-    ReaderWriterMock.cpp
+    ReaderWriterMock.hpp
     ../app/ReaderWriter.cpp
     ../app/ImageInput.cpp
     ImageOutputTest.cpp

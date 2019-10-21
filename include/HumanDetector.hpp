@@ -8,9 +8,11 @@
 #define INCLUDE_HUMANDETECTOR_HPP_
 
 #include <iostream>
+#include <vector>
 #include <IDescriptor.hpp>
 #include <opencv2/core/mat.hpp>
 #include <opencv2/core/types.hpp>
+#include <opencv2/core/fast_math.hpp>
 
 class HumanDetector {
  private:
@@ -19,6 +21,9 @@ class HumanDetector {
   cv::Mat imageFrame;
 
  public:
+  HumanDetector() {
+  }
+
   /*
    * @param image Mat representation of the image
    * @return vector<Rect> value of boundaries detected
@@ -35,8 +40,8 @@ class HumanDetector {
     return boundary;
   }
 
-  void setBoundary(std::vector<cv::Rect> boundary) {
-    this->boundary = boundary;
+  void setBoundary(std::vector<cv::Rect> bound) {
+    boundary = bound;
   }
 
   cv::Mat getImageFrame() const {
@@ -44,15 +49,15 @@ class HumanDetector {
   }
 
   void setImageFrame(cv::Mat imageFrame) {
-    this->imageFrame = imageFrame;
+    imageFrame = imageFrame;
   }
 
   IDescriptor* getDescriptor() const {
     return descriptor;
   }
 
-  void setDescriptor(IDescriptor* descriptor) {
-    this->descriptor = descriptor;
+  void setDescriptor(IDescriptor* desc) {
+    descriptor = desc;
   }
 };
 

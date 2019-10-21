@@ -7,18 +7,21 @@
 #ifndef INCLUDE_IMAGEOUTPUT_HPP_
 #define INCLUDE_IMAGEOUTPUT_HPP_
 
+#include <vector>
+#include <IReaderWriter.hpp>
 #include <opencv2/objdetect.hpp>
 #include <opencv2/core/mat.hpp>
 #include <opencv2/core/types.hpp>
-#include <IReaderWriter.hpp>
 
 class ImageOutput {
  private:
-  cv::Mat outputImage;
   std::vector<cv::Rect> boundary;
   IReaderWriter* writer;
 
  public:
+  ImageOutput() {
+  }
+
   /*
    * @param image Mat representation of the final image
    */
@@ -35,24 +38,16 @@ class ImageOutput {
     return boundary;
   }
 
-  void setBoundary(std::vector<cv::Rect> boundary) {
-    this->boundary = boundary;
-  }
-
-  cv::Mat getOutputImage() const {
-    return outputImage;
-  }
-
-  void setOutputImage(cv::Mat outputImage) {
-    this->outputImage = outputImage;
+  void setBoundary(std::vector<cv::Rect> bound) {
+    boundary = bound;
   }
 
   IReaderWriter* getWriter() const {
     return writer;
   }
 
-  void setWriter(IReaderWriter* writer) {
-    this->writer = writer;
+  void setWriter(IReaderWriter* w) {
+    writer = w;
   }
 };
 

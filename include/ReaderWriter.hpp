@@ -7,6 +7,8 @@
 #ifndef INCLUDE_READERWRITER_HPP_
 #define INCLUDE_READERWRITER_HPP_
 
+#include <vector>
+#include <string>
 #include <IReaderWriter.hpp>
 
 class ReaderWriter : public IReaderWriter {

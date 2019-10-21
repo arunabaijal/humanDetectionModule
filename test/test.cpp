@@ -1,3 +1,9 @@
+/*@
+ *@file test.cpp
+ *@author Aruna Baijal
+ *@brief Running all test cases
+ *@copyright 2019 Aruna Baijal
+ */
 #include <gtest/gtest.h>
 
 int main(int argc, char** argv) {

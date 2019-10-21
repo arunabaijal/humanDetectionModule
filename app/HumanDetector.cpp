@@ -14,8 +14,13 @@ std::vector<cv::Rect> HumanDetector::detectHuman(cv::Mat image) {
 
 std::vector<cv::Rect> HumanDetector::improveBoundary(
     std::vector<cv::Rect> boundary) {
-  cv::Rect r(0, 0, 0, 0);
-  std::vector < cv::Rect > sample;
-  sample.push_back(r);
-  return sample;
+  std::vector<cv::Rect> finalBoundary;
+  for (auto bound : boundary) {  // iterate over each boundary
+    bound.x += cvRound(bound.width * 0.1);  // shrink boundary
+    bound.width = cvRound(bound.width * 0.8);
+    bound.y += cvRound(bound.height * 0.07);
+    bound.height = cvRound(bound.height * 0.8);
+    finalBoundary.push_back(bound);  // create new vector for optimized boundary
+  }
+  return finalBoundary;
 }

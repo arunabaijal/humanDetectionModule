@@ -1,3 +1,9 @@
+/*@
+ *@file main.cpp
+ *@author Aruna Baijal
+ *@brief This class displays a demo run of the project.
+ *@copyright 2019 Aruna Baijal
+ */
 #include <iostream>
 #include <string>
 #include <HumanDetector.hpp>
