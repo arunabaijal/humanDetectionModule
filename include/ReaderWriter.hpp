@@ -11,7 +11,7 @@
 #include <string>
 #include <IReaderWriter.hpp>
 
-class ReaderWriter : public IReaderWriter {
+class ReaderWriter : public virtual IReaderWriter {
  public:
   /*
    * @param std::String with image path
