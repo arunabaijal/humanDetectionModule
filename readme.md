@@ -20,9 +20,11 @@ To address real-life problems involved in obstacle detection, a plethora of sens
 are being used in the industry. We are making use of the most readily available resource, images, to identify human 
 obstacles.
 
-Our module will be able to identify multiple humans in an image. The final deliverable of our module will be a set of 
-images with location information of the detected humans. The robot's system will be able to use this location 
-information. We are assuming the input and output of our module to be a set of static images.
+The final deliverable of our module includes source files and license. We have included a simple demo to demonstrate the
+functioning of the module. Upon running the demo, an image with a human detected pops up on your screen. After that, 
+if you press any key, real world coordinates are displayed on your console. For further details on demo, refer the 
+*Demo* section given below.
+
 
 
 ## Team Members
