@@ -39,7 +39,7 @@ class ImageInput {
   }
 
   void setReader(IReaderWriter* reader) {
-    reader = reader;
+    this->reader = reader;
   }
 };
 

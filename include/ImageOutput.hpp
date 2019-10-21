@@ -44,7 +44,7 @@ class ImageOutput {
   }
 
   void setWriter(IReaderWriter* writer) {
-    writer = writer;
+    this->writer = writer;
   }
 };
 

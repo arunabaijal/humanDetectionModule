@@ -53,7 +53,7 @@ class HumanDetector {
   }
 
   void setDescriptor(IDescriptor* descriptor) {
-    descriptor = descriptor;
+    this->descriptor = descriptor;
   }
 };
 
