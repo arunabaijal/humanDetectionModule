@@ -19,6 +19,9 @@ class ImageOutput {
   IReaderWriter* writer;
 
  public:
+  ImageOutput() {
+  }
+
   /*
    * @param image Mat representation of the final image
    */
@@ -35,16 +38,16 @@ class ImageOutput {
     return boundary;
   }
 
-  void setBoundary(std::vector<cv::Rect> boundary) {
-    boundary = boundary;
+  void setBoundary(std::vector<cv::Rect> bound) {
+    boundary = bound;
   }
 
   IReaderWriter* getWriter() const {
     return writer;
   }
 
-  void setWriter(IReaderWriter* writer) {
-    this->writer = writer;
+  void setWriter(IReaderWriter* w) {
+    writer = w;
   }
 };
 

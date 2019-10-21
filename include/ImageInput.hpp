@@ -20,6 +20,9 @@ class ImageInput {
   IReaderWriter* reader;
 
  public:
+  ImageInput() {
+  }
+
   /*
    * @param image Mat representation of the image
    * @return vector<Rect> value of boundaries detected
@@ -38,8 +41,8 @@ class ImageInput {
     return reader;
   }
 
-  void setReader(IReaderWriter* reader) {
-    this->reader = reader;
+  void setReader(IReaderWriter* r) {
+    reader = r;
   }
 };
 

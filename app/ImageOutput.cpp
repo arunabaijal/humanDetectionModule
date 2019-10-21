@@ -13,8 +13,8 @@ void ImageOutput::showImage(cv::Mat image) {
 
 cv::Mat ImageOutput::drawBoundary(cv::Mat image,
                                   std::vector<cv::Rect> boundary) {
-  for (auto bound : boundary) {
-    getWriter()->drawRectangle(image, bound);
+  for (auto bound : boundary) {  // in case of multiple boundaries
+    getWriter()->drawRectangle(image, bound);  // call helper class
   }
   return image;
 }

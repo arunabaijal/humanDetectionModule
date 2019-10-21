@@ -9,5 +9,10 @@
 
 cv::Mat ImageInput::readImage(std::string imagePath) {
   // get mat format of image from image reader
-  return getReader()->read(imagePath);
+  cv::Mat cvImage = getReader()->read(imagePath);
+  // check validity of image
+  if (cvImage.empty()) {
+    throw std::runtime_error("Invalid File Path");
+  }
+  return cvImage;
 }
