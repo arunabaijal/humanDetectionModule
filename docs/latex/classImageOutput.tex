@@ -1,0 +1,111 @@
+\hypertarget{classImageOutput}{}\section{Image\+Output Class Reference}
+\label{classImageOutput}\index{Image\+Output@{Image\+Output}}
+
+
+{\ttfamily \#include $<$Image\+Output.\+hpp$>$}
+
+
+
+Collaboration diagram for Image\+Output\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{classImageOutput__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classImageOutput_acd191c0743501f00240fa87080db187d}{Image\+Output} ()
+\item 
+void \hyperlink{classImageOutput_a366b4b4dc1a3d42b4c6dd2601a5668c6}{show\+Image} (cv\+::\+Mat image)
+\item 
+cv\+::\+Mat \hyperlink{classImageOutput_af2d882c564dc495b263a9c7dfdde2671}{draw\+Boundary} (cv\+::\+Mat image, std\+::vector$<$ cv\+::\+Rect $>$ \hyperlink{classImageOutput_acf9d0f7617433a905fcd5deeed24ed65}{boundary})
+\item 
+std\+::vector$<$ cv\+::\+Rect $>$ \hyperlink{classImageOutput_a9bd38d9812c4c70fd646ce569d183469}{get\+Boundary} () const 
+\item 
+void \hyperlink{classImageOutput_a79f7ae3fb3091629232f9b04a3b3232e}{set\+Boundary} (std\+::vector$<$ cv\+::\+Rect $>$ bound)
+\item 
+\hyperlink{classIReaderWriter}{I\+Reader\+Writer} $\ast$ \hyperlink{classImageOutput_a7d673d591761131af199d8284c7ebbe5}{get\+Writer} () const 
+\item 
+void \hyperlink{classImageOutput_abd982398c9a8ce648119f3088964014f}{set\+Writer} (\hyperlink{classIReaderWriter}{I\+Reader\+Writer} $\ast$w)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ cv\+::\+Rect $>$ \hyperlink{classImageOutput_acf9d0f7617433a905fcd5deeed24ed65}{boundary}
+\item 
+\hyperlink{classIReaderWriter}{I\+Reader\+Writer} $\ast$ \hyperlink{classImageOutput_a830504828d51af19fe99c1663c01b4c6}{writer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Image\+Output@{Image\+Output}!Image\+Output@{Image\+Output}}
+\index{Image\+Output@{Image\+Output}!Image\+Output@{Image\+Output}}
+\subsubsection[{\texorpdfstring{Image\+Output()}{ImageOutput()}}]{\setlength{\rightskip}{0pt plus 5cm}Image\+Output\+::\+Image\+Output (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classImageOutput_acd191c0743501f00240fa87080db187d}{}\label{classImageOutput_acd191c0743501f00240fa87080db187d}
+
+
+\subsection{Member Function Documentation}
+\index{Image\+Output@{Image\+Output}!draw\+Boundary@{draw\+Boundary}}
+\index{draw\+Boundary@{draw\+Boundary}!Image\+Output@{Image\+Output}}
+\subsubsection[{\texorpdfstring{draw\+Boundary(cv\+::\+Mat image, std\+::vector$<$ cv\+::\+Rect $>$ boundary)}{drawBoundary(cv::Mat image, std::vector< cv::Rect > boundary)}}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat Image\+Output\+::draw\+Boundary (
+\begin{DoxyParamCaption}
+\item[{cv\+::\+Mat}]{image, }
+\item[{std\+::vector$<$ cv\+::\+Rect $>$}]{boundary}
+\end{DoxyParamCaption}
+)}\hypertarget{classImageOutput_af2d882c564dc495b263a9c7dfdde2671}{}\label{classImageOutput_af2d882c564dc495b263a9c7dfdde2671}
+\index{Image\+Output@{Image\+Output}!get\+Boundary@{get\+Boundary}}
+\index{get\+Boundary@{get\+Boundary}!Image\+Output@{Image\+Output}}
+\subsubsection[{\texorpdfstring{get\+Boundary() const }{getBoundary() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$cv\+::\+Rect$>$ Image\+Output\+::get\+Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classImageOutput_a9bd38d9812c4c70fd646ce569d183469}{}\label{classImageOutput_a9bd38d9812c4c70fd646ce569d183469}
+\index{Image\+Output@{Image\+Output}!get\+Writer@{get\+Writer}}
+\index{get\+Writer@{get\+Writer}!Image\+Output@{Image\+Output}}
+\subsubsection[{\texorpdfstring{get\+Writer() const }{getWriter() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Reader\+Writer}$\ast$ Image\+Output\+::get\+Writer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classImageOutput_a7d673d591761131af199d8284c7ebbe5}{}\label{classImageOutput_a7d673d591761131af199d8284c7ebbe5}
+\index{Image\+Output@{Image\+Output}!set\+Boundary@{set\+Boundary}}
+\index{set\+Boundary@{set\+Boundary}!Image\+Output@{Image\+Output}}
+\subsubsection[{\texorpdfstring{set\+Boundary(std\+::vector$<$ cv\+::\+Rect $>$ bound)}{setBoundary(std::vector< cv::Rect > bound)}}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+Output\+::set\+Boundary (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ cv\+::\+Rect $>$}]{bound}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classImageOutput_a79f7ae3fb3091629232f9b04a3b3232e}{}\label{classImageOutput_a79f7ae3fb3091629232f9b04a3b3232e}
+\index{Image\+Output@{Image\+Output}!set\+Writer@{set\+Writer}}
+\index{set\+Writer@{set\+Writer}!Image\+Output@{Image\+Output}}
+\subsubsection[{\texorpdfstring{set\+Writer(\+I\+Reader\+Writer $\ast$w)}{setWriter(IReaderWriter *w)}}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+Output\+::set\+Writer (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Reader\+Writer} $\ast$}]{w}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classImageOutput_abd982398c9a8ce648119f3088964014f}{}\label{classImageOutput_abd982398c9a8ce648119f3088964014f}
+\index{Image\+Output@{Image\+Output}!show\+Image@{show\+Image}}
+\index{show\+Image@{show\+Image}!Image\+Output@{Image\+Output}}
+\subsubsection[{\texorpdfstring{show\+Image(cv\+::\+Mat image)}{showImage(cv::Mat image)}}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+Output\+::show\+Image (
+\begin{DoxyParamCaption}
+\item[{cv\+::\+Mat}]{image}
+\end{DoxyParamCaption}
+)}\hypertarget{classImageOutput_a366b4b4dc1a3d42b4c6dd2601a5668c6}{}\label{classImageOutput_a366b4b4dc1a3d42b4c6dd2601a5668c6}
+
+
+\subsection{Member Data Documentation}
+\index{Image\+Output@{Image\+Output}!boundary@{boundary}}
+\index{boundary@{boundary}!Image\+Output@{Image\+Output}}
+\subsubsection[{\texorpdfstring{boundary}{boundary}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$cv\+::\+Rect$>$ Image\+Output\+::boundary\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classImageOutput_acf9d0f7617433a905fcd5deeed24ed65}{}\label{classImageOutput_acf9d0f7617433a905fcd5deeed24ed65}
+\index{Image\+Output@{Image\+Output}!writer@{writer}}
+\index{writer@{writer}!Image\+Output@{Image\+Output}}
+\subsubsection[{\texorpdfstring{writer}{writer}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Reader\+Writer}$\ast$ Image\+Output\+::writer\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classImageOutput_a830504828d51af19fe99c1663c01b4c6}{}\label{classImageOutput_a830504828d51af19fe99c1663c01b4c6}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{ImageOutput_8hpp}{Image\+Output.\+hpp}\item 
+app/\hyperlink{ImageOutput_8cpp}{Image\+Output.\+cpp}\end{DoxyCompactItemize}
