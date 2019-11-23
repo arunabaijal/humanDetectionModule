@@ -90,7 +90,7 @@ to access our Sprint notes document.
 - Switch to the directory where you want to clone this repository
 - Run the following command:
 ```shell script
-git clone --recursive https://github.com/urastogi885/humanDetectionModule
+git clone https://github.com/arunabaijal/humanDetectionModule
 mkdir build
 cd build/
 cmake ..
@@ -125,3 +125,8 @@ Within the *build* sub-directory, run:
 
 - Upon running the above command, image with human detected will be displayed on your screen.
 - Now, press any key to display real world coordinates on your console.
+
+# GMock
+Class mocked - DescriptorMock.hpp
+No need to change class diagrams, virtual classes already existed
+Added Gmock dependemcy in CMake existing in vendor folder
