@@ -90,7 +90,7 @@ to access our Sprint notes document.
 - Switch to the directory where you want to clone this repository
 - Run the following command:
 ```shell script
-git clone https://github.com/arunabaijal/humanDetectionModule
+git clone https://github.com/arunabaijal/humanDetectionModule.git
 mkdir build
 cd build/
 cmake ..
@@ -127,6 +127,6 @@ Within the *build* sub-directory, run:
 - Now, press any key to display real world coordinates on your console.
 
 # GMock
-Class mocked - DescriptorMock.hpp
-No need to change class diagrams, virtual classes already existed
-Added Gmock dependemcy in CMake existing in vendor folder
+- Class mocked - DescriptorMock.hpp
+- No need to change class diagrams, virtual classes already existed
+- Added Gmock dependemcy in CMake existing in vendor folder
